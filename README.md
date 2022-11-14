@@ -35,11 +35,11 @@ No modules.
 | <a name="lifecycle_rules"></a> [lifecycle\_rules](#input\_lifecycle\_rules)               | Assign lifecycle rule for Storage                                              | `map(any)`    | <pre>{<br> lifecycle_rule_01 = {<br>   with_state                 = "ARCHIVED"<br>   num_newer_versions         = 2<br>   days_since_noncurrent_time = null<br>   storage_class              = ""<br>   type                       = "Delete"<br> }<br> lifecycle_rule_02 = {<br>   with_state                 = ""<br>   num_newer_versions         = null<br>   days_since_noncurrent_time = 7<br>   storage_class              = ""<br>   type                       = "Delete"<br> }<br>}</pre> |    no    |
 
 ## Outputs
-| Name                                                                            | Description                  |
-| ------------------------------------------------------------------------------- | ---------------------------- |
-| <a name="raw_bucket"></a> [raw\_bucket](#output\_raw\_bucket)                   | Raw storage bucket url       |
-| <a name="temp_bucket"></a> [temp\_bucket](#output\_temp\_bucket)                | Temp storage bucket url      |
-| <a name="artifacts_bucket"></a> [artifacts\_bucket](#output\_artifacts\_bucket) | Artifacts storage bucket url |
+| Name                                                                                   | Description                  |
+| -------------------------------------------------------------------------------------- | ---------------------------- |
+| <a name="output_raw_bucket"></a> [raw\_bucket](#output\_raw\_bucket)                   | Raw storage bucket url       |
+| <a name="output_temp_bucket"></a> [temp\_bucket](#output\_temp\_bucket)                | Temp storage bucket url      |
+| <a name="output_artifacts_bucket"></a> [artifacts\_bucket](#output\_artifacts\_bucket) | Artifacts storage bucket url |
 <!-- END_TF_DOCS -->
 
 ## License
