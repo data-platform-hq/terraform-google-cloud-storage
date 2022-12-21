@@ -37,9 +37,10 @@ No modules.
 | <a name="lifecycle_labels"></a> [lifecycle\_labels](#input\_lifecycle\_labels)            | The labels associated with this bucket. You can use these to organize and group your datasets                       | `map(string)` | {}                      |    no    |
 
 ## Outputs
-| Name                                                   | Description                 |
-| ------------------------------------------------------ | --------------------------- |
-| <a name="output_bucket"></a> [bucket](#output\_bucket) | The base URL of the bucket. |
+| Name                                                                    | Description                         |
+| ----------------------------------------------------------------------- | ----------------------------------- |
+| <a name="output_bucket_url"></a> [bucket\_url](#output\_bucket\_url)    | The base URL of the storage bucket. |
+| <a name="output_bucket_name"></a> [bucket\_name](#output\_bucket\_name) | The storage bucket name.            |
 <!-- END_TF_DOCS -->
 
 ## License
