@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "main" {
   for_each      = var.bucket_name
-  name          = "${var.env}-${var.product_base_name}-${each.key}-${var.project_id}-bucket"
+  name          = replace("${var.env}-${var.product_base_name}-${each.key}-${var.project_id}-bucket", "-", "_")
   location      = var.location
   storage_class = var.class
   force_destroy = var.delete_data
