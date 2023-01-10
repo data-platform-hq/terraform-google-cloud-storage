@@ -4,7 +4,7 @@ variable "bucket_name" {
 }
 
 variable "project_id" {
-  description = "The ID of the project in which the resource belongs"
+  description = "ID of the project in which the resources should be created."
   type        = string
 }
 

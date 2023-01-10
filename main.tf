@@ -11,7 +11,6 @@ resource "google_storage_bucket" "main" {
     for_each = var.lifecycle_rules
     content {
       condition {
-        # with_state                 = lifecycle_rule.value.with_state
         with_state                 = lookup(lifecycle_rule.value, "with_state", "")
         num_newer_versions         = lookup(lifecycle_rule.value, "num_newer_versions", "")
         days_since_noncurrent_time = lookup(lifecycle_rule.value, "days_since_noncurrent_time", "")
