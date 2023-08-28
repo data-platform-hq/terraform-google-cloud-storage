@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/data-platform-hq/terraform-google-cloud-storage/compare/v1.0.0...v1.0.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* update module version ([8a1ef62](https://github.com/data-platform-hq/terraform-google-cloud-storage/commit/8a1ef6200918f6e4672a08cd1831b32d8d3238a2))
+
 # 1.0.0 (2023-01-23)
 
 
