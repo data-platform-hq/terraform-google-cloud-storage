@@ -7,7 +7,7 @@ Terraform module for creation of Google Cloud Storage buckets
 | Name                                                                      | Version  |
 | ------------------------------------------------------------------------- | -------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_google"></a> [google](#requirement\_google)          | 4.24.0   |
+| <a name="requirement_google"></a> [google](#requirement\_google)          | >= 4.69.1   |
 
 ## Providers
 | Name                                                       | Version |
