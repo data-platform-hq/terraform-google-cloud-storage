@@ -33,6 +33,7 @@ resource "google_storage_bucket" "this" {
   location      = var.location
   storage_class = var.class
   force_destroy = var.delete_data
+  project = var.project_id
   versioning {
     enabled = var.versioning
   }

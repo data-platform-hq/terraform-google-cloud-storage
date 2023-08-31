@@ -16,12 +16,14 @@ variable "prefix" {
 
 variable "suffix" {
   description = "Resource name suffix"
+    type        = string
   default     = ""
 }
 
 variable "project_id" {
   description = "ID of the project in which the resources should be created."
   type        = string
+  default = ""
 }
 
 variable "env" {
