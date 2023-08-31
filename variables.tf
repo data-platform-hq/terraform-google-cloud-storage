@@ -1,15 +1,26 @@
-variable "bucket_name" {
-  description = "Unique names for buckets."
-  type        = set(string)
+variable "bucket_config" {
+  description = "Contains Storage buckets name, roles, listst of entities (users, groups, service accounts)"
+  type = object({
+    name    = string
+    readers = optional(list(string))
+    writers = optional(list(string))
+    owners  = optional(list(string))
+  })
+}
+
+variable "prefix" {
+  description = "Prefix for resource names"
+  type        = string
+  default     = ""
+}
+
+variable "suffix" {
+  description = "Resource name suffix"
+  default     = ""
 }
 
 variable "project_id" {
   description = "ID of the project in which the resources should be created."
-  type        = string
-}
-
-variable "product_base_name" {
-  description = "Cloud resources base name (used to create services)."
   type        = string
 }
 
