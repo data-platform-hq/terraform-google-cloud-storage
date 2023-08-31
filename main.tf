@@ -53,7 +53,7 @@ resource "google_storage_bucket" "this" {
   labels = var.labels
 }
 
-resource "google_storage_bucket_access_control" "public_rule" {
+resource "google_storage_bucket_access_control" "this" {
   for_each = local.acls_mapping
   bucket   = google_storage_bucket.this.name
   role     = each.value.role
