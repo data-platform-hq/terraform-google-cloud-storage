@@ -1,5 +1,5 @@
 variable "bucket_config" {
-  description = "Contains Storage buckets name, roles, listst of entities (users, groups, service accounts)"
+  description = "Contains Storage buckets name, roles, listst of entities (users, groups, service accounts)."
   type = object({
     name    = string
     readers = optional(list(string))
