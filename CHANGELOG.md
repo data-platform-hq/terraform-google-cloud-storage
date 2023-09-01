@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/data-platform-hq/terraform-google-cloud-storage/compare/v1.0.1...v1.0.2) (2023-09-01)
+
+
+### Bug Fixes
+
+* skipped release ([3f5ca14](https://github.com/data-platform-hq/terraform-google-cloud-storage/commit/3f5ca148abbd1eedf8aadf75da9133dbd17f90ba))
+
 ## [1.0.1](https://github.com/data-platform-hq/terraform-google-cloud-storage/compare/v1.0.0...v1.0.1) (2023-08-28)
 
 
